@@ -1,0 +1,415 @@
+/* Navigation Base Styling */
+.nav {
+  transition: all 0.4s ease !important;
+    background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #047857 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+ 
+
+
+}
+
+
+
+/* Logo Section */
+.navbar-brand  {
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.navbar-brand img {
+  height: 45px !important;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.navbar-brand p {
+   color: #10b981;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar.bg-\[#092E22\] .navbar-brand p {
+  color: #6ee7b7;
+}
+
+/* Navigation Links */
+.navbar-nav {
+  gap: 1rem;
+}
+
+.nav-link {
+  font-weight: 600 !important;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem !important;
+  border-radius: 10px;
+  transition: all 0.3s ease !important;
+  position: relative;
+  text-decoration: none;
+}
+
+/* Transparent nav links */
+.navbar:not(.bg-\[#092E22\]) .nav-link {
+  color: #3664ae !important;
+}
+
+.navbar:not(.bg-\[#092E22\]) .nav-link:hover,
+.navbar:not(.bg-\[#092E22\]) .nav-link.active {
+  color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Scrolled nav links */
+.navbar.bg-\[#092E22\] .nav-link {
+  color: #d1fae5 !important;
+}
+
+.navbar.bg-\[#092E22\] .nav-link:hover,
+.navbar.bg-\[#092E22\] .nav-link.active {
+  color: #6ee7b7 !important;
+  background: rgba(110, 231, 183, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Active link indicator */
+.nav-link.active::after,
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #34d399);
+  border-radius: 2px;
+  opacity: 0;
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Dropdown Styling */
+.dropdown-menu.custom-dropdown {
+  background: white !important;
+  border: none !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 15px !important;
+  padding: 1rem !important;
+  margin-top: 0.5rem;
+  animation: dropdownSlide 0.3s ease;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  color: #374151 !important;
+  font-weight: 500;
+  padding: 0.8rem 1rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 0.3rem;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  color: white !important;
+  transform: translateX(5px);
+}
+
+.dropdown-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Cart Button */
+.cart {
+     background: linear-gradient(135deg, #10b981, #059669)!important;
+  border: 2px solid rgba(16, 185, 129, 0.3) !important;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+
+.cart:hover::before {
+  opacity: 1;
+}
+
+.cart:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+  color: white !important;
+}
+
+.cart > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Cart Badge */
+.cart .rounded-circle {
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(25%, 25%) scale(1); }
+  50% { transform: translate(25%, 25%) scale(1.2); }
+}
+
+/* User Button */
+.user {
+  background: linear-gradient(135deg, #092E22 0%, #064e3b 100%) !important;
+  border: 2px solid rgba(16, 185, 129, 0.3) !important;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.user::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #10b981, #059669);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.user:hover::before {
+  opacity: 1;
+}
+
+.user:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(9, 46, 34, 0.3);
+  border-color: #10b981 !important;
+}
+
+.user > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Login Button */
+.login-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  border: 2px solid #10b981 !important;
+  color: white !important;
+  padding: 0.8rem 1.5rem !important;
+  font-weight: 700 !important;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none !important;
+  border-radius: 12px !important;
+}
+
+.login-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.login-btn:hover::before {
+  left: 100%;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+  color: white !important;
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler {
+  border: none !important;
+  padding: 0.5rem !important;
+  border-radius: 8px;
+  background: rgba(16, 185, 129, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+}
+
+.navbar-toggler:hover {
+  background: rgba(16, 185, 129, 0.2);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2816, 185, 129, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: white;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease;
+  }
+  
+  .navbar.bg-\[#092E22\] .navbar-collapse {
+    background: linear-gradient(135deg, #092E22 0%, #064e3b 100%);
+  }
+  
+  .navbar-nav {
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nav-link {
+    padding: 1rem !important;
+    text-align: center;
+  }
+  
+  .icons {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .login-btn {
+    padding: 1rem 2rem !important;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand p {
+    font-size: 1.3rem;
+  }
+  
+  .navbar-brand img {
+    height: 35px !important;
+  }
+  
+  .icons {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .cart, .user {
+    width: 2.2rem !important;
+    height: 2.2rem !important;
+  }
+  
+  .login-btn {
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.9rem;
+  }
+}
+
+/* Scroll Indicator */
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #10b981, #34d399);
+  transition: width 0.3s ease;
+}
+
+.navbar:hover::after {
+  width: 100%;
+}
+
+/* Focus States for Accessibility */
+.nav-link:focus,
+.cart:focus,
+.user:focus,
+.login-btn:focus {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Loading State for Cart */
+.cart[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .navbar {
+    border-bottom: 2px solid #000;
+  }
+  
+  .nav-link {
+    border: 1px solid transparent;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    border-color: #10b981;
+  }
+}

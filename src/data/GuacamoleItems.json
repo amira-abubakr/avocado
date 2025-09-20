@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Mexican Guac",
+    "image": "/Guacamole/Pic-_47-Guacamole-con-Menta-Final-low-1.jpg",
+    "calories": "120 kcal",
+    "price": "5.99 "
+  },
+  {
+    "id": 2,
+    "name": "Authentic Guacamole",
+    "image": "/Guacamole/Pic-_48-Bocadito-de-Guacamole-Final-low-1.jpg",
+    "calories": "450 kcal",
+    "price": "8.49"
+  },
+  {
+    "id": 3,
+    "name": "Baked Guacamole",
+    "image": "/Guacamole/Pic-29-Guacamole-de-Mango-Final-low.jpg",
+    "calories": "80 kcal",
+    "price": "3.49"
+  },
+  {
+    "id": 4,
+    "name": "Tuna Poke Miso Guacamole",
+    "image": "/Guacamole/Pic-309-Maryland-Crab-and-Avocado-Dip-Final-low.jpg",
+    "calories": "70 kcal",
+    "price": "4.20"
+  },
+  {
+    "id": 5,
+    "name": "Cucumber Guacamole Bites",
+    "image": "/Guacamole/Pic-324-Sundried-Tomato-Guacamole-Final-low.jpg",
+    "calories": "75 kcal",
+    "price": "5.99"
+  },
+  {
+    "id": 6,
+    "name": "Mardi Gras Cajun Guacamole",
+    "image": "/Guacamole/Pic-403-Chicken-Guacamole-Final-low.jpg",
+    "calories": "50 kcal",
+    "price": "7.99 "
+  },
+  {
+    "id": 7,
+    "name": "Garlic Jalapeño Guacamole",
+    "image": "/Guacamole/Pic-516-Chef-Ivette-Chestaro-Elvis-Guac-N-Roll-Final-low.jpg",
+    "calories": "65 kcal",
+    "price": "6.20"
+  },
+  {
+    "id": 8,
+    "name": "Chunky Mango Guacamole",
+    "image": "/Guacamole/Pic-530-The-Motley-Cru-Guac-Pork-Chips-with-Tequila-Braised-Pork-Belly-Final-low.jpg",
+    "calories": "110 kcal",
+    "price": "4.99 "
+  },
+  {
+    "id": 9,
+    "name": "Smooth and Spicy Guacamole",
+    "image": "/Guacamole/Pic-750-Guacamole-Sushi-Final-high-2-copy.jpg",
+    "calories": "60 kcal",
+    "price": "4.99"
+  },
+  {
+    "id": 10,
+    "name": "Layered Taco Dip",
+    "image": "/Guacamole/Pic-756-Goat-Cheese-Guacamole-Final-high-2.jpg",
+    "calories": "90 kcal",
+    "price": "4.99"
+  },
+  {
+    "id": 11,
+    "name": "Yuzu-Togarashi Guacamole",
+    "image": "/Guacamole/Pic-1009-Middle-Eastern-Tahini-Zaatar-Spice-Guacamole-Final.jpg",
+    "calories": "55 kcal",
+    "price": "5.20"
+  },
+  {
+    "id": 12,
+    "name": "Mango and Tomatillo Guacamole",
+    "image": "/Guacamole/Pic-1018-Kimchi-Guacamole-with-Gochujang-Crema-Swirl-Final.jpg",
+    "calories": "100 kcal",
+    "price": "2.99"
+  },
+  {
+    "id": 13,
+    "name": "Bacon Championship Guacamole",
+    "image": "/Guacamole/Pic-1024-Yuzu-Togarashi-Guacamole-Final.jpg",
+    "calories": "80 kcal",
+    "price": "3.50 "
+  },
+  {
+    "id": 14,
+    "name": "Taco Salad Guacamole",
+    "image": "/Guacamole/Pic-1086-Chocolate-Guacamole-Final.jpg",
+    "calories": "65 kcal",
+    "price": "4.70"
+  }
+]

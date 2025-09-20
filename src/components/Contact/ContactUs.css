@@ -1,0 +1,315 @@
+/* Contact Section Base Styling */
+#contact {
+  background: linear-gradient(135deg, #f8fffe 0%, #ecfdf5 50%, #f0fdf4 100%);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(34, 197, 94, 0.05) 0%, transparent 70%),
+    radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#contact .container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+/* Section Header */
+#contact .text-center.mb-5 h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: #064e3b !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#contact .text-center.mb-5 h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #10b981, #059669);
+  border-radius: 2px;
+}
+
+#contact .text-center.mb-5 p {
+  font-size: 1rem;
+  color: #6b7280 !important;
+  font-weight: 500;
+  max-width: 700px;
+  margin: 0 auto;
+  /* line-height: 1.6; */
+}
+
+/* Contact Card */
+.card.shadow.border-0 {
+  background: white;
+  border-radius: 25px !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(16, 185, 129, 0.1) !important;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card.shadow.border-0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #10b981, #059669, #047857);
+  z-index: 1;
+}
+
+.card.shadow.border-0:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Card Body */
+.card-body.p-4 {
+  padding: 2rem !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* Form Title */
+.card-body h3 {
+  color: #059669 !important;
+  font-weight: 800;
+  font-size: 2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 2.5rem !important; */
+}
+
+/* Form Labels */
+.form-label {
+  color: #374151;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+/* Form Controls */
+.form-control {
+  border: 2px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  padding: 0.7rem 1rem !important;
+  font-size: 1rem;
+  transition: all 0.3s ease !important;
+  background-color: #fafafa;
+  color: #374151;
+}
+
+.form-control:focus {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
+  background-color: white;
+  outline: none !important;
+}
+
+.form-control:hover {
+  border-color: #6b7280 !important;
+  background-color: white;
+}
+
+/* Textarea specific styling */
+textarea.form-control {
+  resize: vertical;
+  /* min-height: 120px; */
+}
+
+/* Form Groups */
+.mb-3 {
+  margin-bottom: rem !important;
+  position: relative;
+}
+
+.mb-3:last-of-type {
+  margin-bottom: rem !important;
+}
+
+/* Submit Button */
+.btn.btn-success.w-100 {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 0.7rem 2rem !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.btn.btn-success.w-100::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn.btn-success.w-100:hover::before {
+  left: 100%;
+}
+
+.btn.btn-success.w-100:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.btn.btn-success.w-100:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+/* Form Validation Styling */
+.form-control:invalid {
+  border-color: #ef4444;
+}
+
+.form-control:valid {
+  border-color: #10b981;
+}
+
+/* Floating Label Effect */
+.mb-3 {
+  position: relative;
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+  transform: translateY(-1.5rem) scale(0.85);
+  color: #10b981;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact {
+    padding: 3rem 0;
+  }
+  
+  .card-body.p-4 {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .card-body h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem !important;
+  }
+  
+  .form-control {
+    padding: 0.9rem 1rem !important;
+    font-size: 0.95rem;
+  }
+  
+  .btn.btn-success.w-100 {
+    padding: 0.9rem 1.5rem !important;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #contact .text-center.mb-5 {
+    padding: 0 1rem;
+  }
+  
+  .card.shadow.border-0 {
+    margin: 0 1rem;
+    border-radius: 20px !important;
+  }
+  
+  .card-body.p-4 {
+    padding: 1.5rem 1.2rem !important;
+  }
+  
+  .card-body h3 {
+    font-size: 1.6rem;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* Animation Enhancements */
+.card.shadow.border-0 {
+  animation: slideInUp 0.8s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input Focus Animation */
+.form-control {
+  position: relative;
+}
+
+.mb-3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #10b981, #059669);
+  transition: width 0.3s ease;
+}
+
+.mb-3:focus-within::after {
+  width: 100%;
+}
+
+/* Success State Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.btn.btn-success.w-100:focus {
+  animation: pulse 1.5s infinite;
+}

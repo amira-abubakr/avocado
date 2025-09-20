@@ -1,0 +1,13 @@
+/* Rest All Html Elemnts */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "cursive";
+   
+}
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
