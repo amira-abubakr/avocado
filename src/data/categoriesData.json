@@ -171,5 +171,74 @@
         "price": "6.20"
       }
     ]
+  },
+  {
+    "id": 3,
+    "name": "Avocado Taco & Burrito",
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Classic Mexican Guac",
+        "image": "/Taco&Burrito/106-tacos.png",
+        "calories": "120 kcal",
+        "price": "5.99 "
+      },
+      {
+        "id": 1,
+        "name": "Classic Mexican Guac",
+        "image": "/Taco&Burrito/107-tacos.png",
+        "calories": "120 kcal",
+        "price": "5.99 "
+      },
+      {
+        "id": 1,
+        "name": "Classic Mexican Guac",
+        "image": "/Taco&Burrito/108-tacoos-1.png",
+        "calories": "120 kcal",
+        "price": "5.99 "
+      },
+      {
+        "id": 2,
+        "name": "Authentic Guacamole",
+        "image": "/Taco&Burrito/114-taccos.png",
+        "calories": "450 kcal",
+        "price": "8.49"
+      },
+      {
+        "id": 3,
+        "name": "Baked Guacamole",
+        "image": "/Taco&Burrito/116-taccos.png",
+        "calories": "80 kcal",
+        "price": "3.49"
+      },
+      {
+        "id": 4,
+        "name": "Tuna Poke Miso Guacamole",
+        "image": "/Taco&Burrito/117-taccos.png",
+        "calories": "70 kcal",
+        "price": "4.20"
+      },
+      {
+        "id": 5,
+        "name": "Cucumber Guacamole Bites",
+        "image": "/Taco&Burrito/118-taccos.png",
+        "calories": "75 kcal",
+        "price": "5.99"
+      },
+      {
+        "id": 6,
+        "name": "Mardi Gras Cajun Guacamole",
+        "image": "/Taco&Burrito/119-taccos-1.png",
+        "calories": "50 kcal",
+        "price": "7.99 "
+      },
+      {
+        "id": 7,
+        "name": "Garlic Jalapeño Guacamole",
+        "image": "/Taco&Burrito/chicken_taco-1-scaled.jpg",
+        "calories": "65 kcal",
+        "price": "6.20"
+      }
+    ]
   }
 ]

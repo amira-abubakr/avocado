@@ -2,7 +2,7 @@
 import LOGO from "../../assets/images/logo.png";
 import "./Nav.css";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
-import { Search, ShoppingCart, User } from "lucide-react";
+import {  ShoppingCart, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
@@ -43,12 +43,12 @@ const Nav = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="/categories">
+            <a className="nav-link text-white" href="#categories">
               Our Recipes
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="/conactUs">
+            <a className="nav-link text-white" href="#contactUs">
               Contact Us
             </a>
           </li>
