@@ -1,13 +1,13 @@
 
 import React from "react";
 
-import Guacamole from "../../assets/images/guacamole-1.png";
-import Burgers from "../../assets/images/burger.png";
-import Tacos from "../../assets/images/tacos.png";
-import Salads from "../../assets/images/salads.png";
-import AvocadoToast from "../../assets/images/avocado-toast-1.png";
+import Guacamole from "../../../public/Guacamole/guacamole-1.png";
+import Burgers from "../../../public/burger/burger.png";
+import Tacos from "../../../public/Taco&Burrito/tacos.png";
+import Salads from "../../../public/Salad&Bowl/salads.png";
+import AvocadoToast from "../../../public/Avocado Toast/avocado-toast-1.png";
 import HeartHealthy from "../../assets/images/aha.svg";
-import Sauces from "../../assets/images/sauce.png";
+import Sauces from "../../../public/Avocado Sauces/sauce.png";
 import {Link}  from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";

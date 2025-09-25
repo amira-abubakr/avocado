@@ -1,7 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Guacamole",
+    "body": {"title":"Guacamole", 
+              "desc": "Discover a variety of delicious guacamole recipes that are perfect for any occasion. From classic to creative, find your favorite way to enjoy this creamy avocado dip.",
+              "img": "/Guacamole/guacamole-1.png"
+            }
+            ,
+
     "recipes": [
       {
         "id": 1,
@@ -105,7 +110,11 @@
   },
   {
     "id": 2,
-    "name": "Burgers&Sandwiches",
+     "body": {"title":"Burgers & Sandwiches", 
+              "desc": "Discover a variety of delicious guacamole recipes that are perfect for any occasion. From classic to creative, find your favorite way to enjoy this creamy avocado dip.",
+              "img": "/burger/burger.png"
+            }
+            ,
     "recipes": [
       {
         "id": 1,
@@ -174,7 +183,11 @@
   },
   {
     "id": 3,
-    "name": "Avocado Taco & Burrito",
+     "body": {"title":"Avocado Taco & Burrito", 
+              "desc": "Discover a variety of delicious guacamole recipes that are perfect for any occasion. From classic to creative, find your favorite way to enjoy this creamy avocado dip.",
+              "img": "/Taco&Burrito/tacos.png"
+            }
+            ,
     "recipes": [
       {
         "id": 1,
@@ -182,6 +195,20 @@
         "image": "/Taco&Burrito/106-tacos.png",
         "calories": "120 kcal",
         "price": "5.99 "
+      },
+      {
+        "id": 5,
+        "name": "Cucumber Guacamole Bites",
+        "image": "/Taco&Burrito/118-taccos.png",
+        "calories": "75 kcal",
+        "price": "5.99"
+      },
+      {
+        "id": 6,
+        "name": "Mardi Gras Cajun Guacamole",
+        "image": "/Taco&Burrito/119-taccos-1.png",
+        "calories": "50 kcal",
+        "price": "7.99 "
       },
       {
         "id": 12,
@@ -218,20 +245,7 @@
         "calories": "70 kcal",
         "price": "4.20"
       },
-      {
-        "id": 5,
-        "name": "Cucumber Guacamole Bites",
-        "image": "/Taco&Burrito/118-taccos.png",
-        "calories": "75 kcal",
-        "price": "5.99"
-      },
-      {
-        "id": 6,
-        "name": "Mardi Gras Cajun Guacamole",
-        "image": "/Taco&Burrito/119-taccos-1.png",
-        "calories": "50 kcal",
-        "price": "7.99 "
-      },
+      
       {
         "id": 7,
         "name": "Garlic Jalapeño Guacamole",
@@ -243,7 +257,11 @@
   },
   {
     "id": 4,
-    "name": "Avocado Salad",
+     "body": {"title":"Avocado Salad & Bowl", 
+              "desc": "Discover a variety of delicious guacamole recipes that are perfect for any occasion. From classic to creative, find your favorite way to enjoy this creamy avocado dip.",
+              "img": "/Salad&Bowl/salads.png"
+            }
+            ,
     "recipes": [
       {
         "id": 12,
@@ -321,6 +339,239 @@
         "image": "/Salad&Bowl/Pic-1187-Avocado-Layered-Taco-Salad-Final-Angle.jpg",
         "calories": "65 kcal",
         "price": "6.20"
+      }
+    ]
+  },
+   {
+    "id": 5,
+     "body": {"title":"Avocado Taco & Burrito", 
+              "desc": "Discover a variety of delicious guacamole recipes that are perfect for any occasion. From classic to creative, find your favorite way to enjoy this creamy avocado dip.",
+              "img": "/Taco&Burrito/tacos.png"
+            }
+            ,
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Classic Mexican Guac",
+        "image": "/Avocado Toast/maxresdefault-1-3.jpg",
+        "calories": "120 kcal",
+        "price": "5.99 "
+      },
+      {
+        "id": 2,
+        "name": "Authentic Guacamole",
+        "image": "/Avocado Toast/Pic-_25-Tostada-de-Aguacate-Final-low-2.jpg",
+        "calories": "450 kcal",
+        "price": "8.49"
+      },
+      {
+        "id": 3,
+        "name": "Baked Guacamole",
+        "image": "/Avocado Toast/Pic-206-Avocado-Toast-with-Scallion-Sesame-and-Chile-Garnish-Final-low.jpg",
+        "calories": "80 kcal",
+        "price": "3.49"
+      },
+      {
+        "id": 4,
+        "name": "Tuna Poke Miso Guacamole",
+        "image": "/Avocado Toast/Pic-680-Avocado-Egg-Toast-Final-low.jpg",
+        "calories": "70 kcal",
+        "price": "4.20"
+      },
+      {
+        "id": 5,
+        "name": "Cucumber Guacamole Bites",
+        "image": "/Guacamole/Pic-324-Sundried-Tomato-Guacamole-Final-low.jpg",
+        "calories": "75 kcal",
+        "price": "5.99"
+      },
+      {
+        "id": 6,
+        "name": "Mardi Gras Cajun Guacamole",
+        "image": "/Avocado Toast/Pic-835-Roast-Beef-with-Avocado-Horseradish-Mayonnaise-Final-low-copy.jpg",
+        "calories": "50 kcal",
+        "price": "7.99 "
+      },
+      {
+        "id": 7,
+        "name": "Garlic Jalapeño Guacamole",
+        "image": "/Avocado Toast/Pic-899-Avocado-Turkey-Bacon-and-Tomato-Toasts-Final-low.jpg",
+        "calories": "65 kcal",
+        "price": "6.20"
+      },
+      {
+        "id": 8,
+        "name": "Chunky Mango Guacamole",
+        "image": "/Avocado Toast/Pic-1001-Roasted-Beet-and-Avocado-Toast-Final.jpg",
+        "calories": "110 kcal",
+        "price": "4.99 "
+      },
+      {
+        "id": 9,
+        "name": "Smooth and Spicy Guacamole",
+        "image": "/Avocado Toast/Pic-1130-Avocado-Toast-with-Cheese-FinalArtboard-1.jpg",
+        "calories": "60 kcal",
+        "price": "4.99"
+      },
+      {
+        "id": 10,
+        "name": "Layered Taco Dip",
+        "image": "/Avocado Toast/Recipe-_0002_breakfast_guac_toast-296x345-1.jpg",
+        "calories": "90 kcal",
+        "price": "4.99"
+      },
+      {
+        "id": 11,
+        "name": "Yuzu-Togarashi Guacamole",
+        "image": "/Avocado Toast/Screenshot-2025-07-28-at-7.29.50-AM.png",
+        "calories": "55 kcal",
+        "price": "5.20"
+      },
+      {
+        "id": 12,
+        "name": "Mango and Tomatillo Guacamole",
+        "image": "/Avocado Toast/Smoked-Salmon-Avocado-Toast-1.png",
+        "calories": "100 kcal",
+        "price": "2.99"
+      }
+    ]
+  },
+    {
+    "id": 6,
+     "body": {"title":"AHA Heart Healthy", 
+              "desc": "Discover a variety of delicious guacamole recipes that are perfect for any occasion. From classic to creative, find your favorite way to enjoy this creamy avocado dip.",
+              "img": "/Heart Healthy/aha.svg"
+            }
+            ,
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Classic Mexican Guac",
+        "image": "/Heart Healthy/Green-Avocado-Hummus-1.jpg",
+        "calories": "120 kcal",
+        "price": "5.99 "
+      },
+      {
+        "id": 2,
+        "name": "Authentic Guacamole",
+        "image": "/Heart Healthy/Large-Image-Recipe-Resize-2-1-1.jpg",
+        "calories": "450 kcal",
+        "price": "8.49"
+      },
+      {
+        "id": 3,
+        "name": "Baked Guacamole",
+        "image": "/Heart Healthy/Large-Image-Recipe-Resize-3-1-1.jpg",
+        "calories": "80 kcal",
+        "price": "3.49"
+      },
+      {
+        "id": 4,
+        "name": "Tuna Poke Miso Guacamole",
+        "image": "/Heart Healthy/Large-Image-Recipe-Resize-3.jpg",
+        "calories": "70 kcal",
+        "price": "4.20"
+      },
+      {
+        "id": 5,
+        "name": "Cucumber Guacamole Bites",
+        "image": "/Heart Healthy/Large-Image-Recipe-Resize-4-1-1.jpg",
+        "calories": "75 kcal",
+        "price": "5.99"
+      },
+      {
+        "id": 6,
+        "name": "Mardi Gras Cajun Guacamole",
+        "image": "/Heart Healthy/Pic-38-Ensalada-de-Pina-Aguacate-y-Pepino-Final-low-1.jpg",
+        "calories": "50 kcal",
+        "price": "7.99 "
+      },
+      {
+        "id": 7,
+        "name": "Garlic Jalapeño Guacamole",
+        "image": "/Avocado Toast/Pic-899-Avocado-Turkey-Bacon-and-Tomato-Toasts-Final-low.jpg",
+        "calories": "65 kcal",
+        "price": "6.20"
+      },
+      {
+        "id": 8,
+        "name": "Chunky Mango Guacamole",
+        "image": "/Heart Healthy/Pic-54-Smoothie-de-Aguacate-Banano-Naranja-y-Yogurt-Final-high-1.jpg",
+        "calories": "110 kcal",
+        "price": "4.99 "
+      },
+      {
+        "id": 9,
+        "name": "Smooth and Spicy Guacamole",
+        "image": "/Heart Healthy/Pic-180-Skillet-Chicken-with-Savory-Avocado-Salsa-Recipe-78-Final-high-1.jpg",
+        "calories": "60 kcal",
+        "price": "4.99"
+      },
+      {
+        "id": 10,
+        "name": "Layered Taco Dip",
+        "image": "/Heart Healthy/Pic-330-Sliced-Avocado-and-Oranges-with-Tahini-Yogurt-Sauce-Final-low-1-1.jpg",
+        "calories": "90 kcal",
+        "price": "4.99"
+      },
+      {
+        "id": 11,
+        "name": "Yuzu-Togarashi Guacamole",
+        "image": "/Heart Healthy/Pic-374-Tuna-Avocado-and-Arugula-White-Bean-Salad-Final-low-1-1.jpg",
+        "calories": "55 kcal",
+        "price": "5.20"
+      }
+    ]
+  },
+    {
+    "id": 7,
+     "body": {"title":"Avocado Sauces & Spreads", 
+              "desc": "Discover a variety of delicious guacamole recipes that are perfect for any occasion. From classic to creative, find your favorite way to enjoy this creamy avocado dip.",
+              "img": "/Avocado Sauces/sauce.png"
+            }
+            ,
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Classic Mexican Guac",
+        "image": "/Avocado Sauces/11_FreshAvocadoStrawberryJam_0056.jpg",
+        "calories": "120 kcal",
+        "price": "5.99 "
+      },
+      {
+        "id": 2,
+        "name": "Authentic Guacamole",
+        "image": "/Avocado Sauces/12_AvocadoBernaise_0057.jpg",
+        "calories": "450 kcal",
+        "price": "8.49"
+      },
+      {
+        "id": 3,
+        "name": "Baked Guacamole",
+        "image": "/Avocado Sauces/AvocadoGreenMole.jpg",
+        "calories": "80 kcal",
+        "price": "3.49"
+      },
+      {
+        "id": 4,
+        "name": "Tuna Poke Miso Guacamole",
+        "image": "/Avocado Sauces/Crema-296x345-1.jpg",
+        "calories": "70 kcal",
+        "price": "4.20"
+      },
+      {
+        "id": 5,
+        "name": "Cucumber Guacamole Bites",
+        "image": "/Avocado Sauces/Pic-269-Avocado-Chipotle-Spread-Final-low.jpg",
+        "calories": "75 kcal",
+        "price": "5.99"
+      },
+      {
+        "id": 6,
+        "name": "Mardi Gras Cajun Guacamole",
+        "image": "/Avocado Sauces/Pic-1040-Avocado-Tartar-Sauce-Final.jpg",
+        "calories": "50 kcal",
+        "price": "7.99 "
       }
     ]
   }

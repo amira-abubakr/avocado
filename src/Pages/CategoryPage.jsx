@@ -1,4 +1,3 @@
-import GUACAMOLE from "../assets/images/guacamole-1.png";
 import { Row, Col } from "react-bootstrap";
 import CategoryItem from "../components/CategoryItem";
 import { useParams } from "react-router-dom";
@@ -20,17 +19,15 @@ const CategoryPage = () => {
       {/* Header Section */}
       <div className="container d-flex flex-wrap align-items-center mt-5 header-section">
         <div className="w-50 p-3 content-section">
-          <h1 className="fw-bold text-success mb-4 page-title">Guacamole Recipes</h1>
+          <h1 className="fw-bold text-success mb-4 page-title">{category.body.title}</h1>
           <p className="text-muted mb-4 page-description">
-            Discover a variety of delicious guacamole recipes that are perfect
-            for any occasion. From classic to creative, find your favorite way
-            to enjoy this creamy avocado dip.
+          { category.body.desc}
           </p>
 
           <button className="btn btn-outline-success learn-more-btn">Learn More</button>
         </div>
         <div className="w-50 text-center p-3 image-section">
-          <img src={GUACAMOLE} alt="Guacamole" className="img-fluid hero-image" />
+          <img src={category.body.img} alt="Guacamole" className="img-fluid hero-image" />
         </div>
       </div>
 
