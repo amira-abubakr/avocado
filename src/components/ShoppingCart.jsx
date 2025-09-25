@@ -2,11 +2,12 @@ import React from "react";
 import { Offcanvas, Stack } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import FormatCurrency from "./FormatCurrency";
-import GuacamoleItems from "../data/GuacamoleItems.json";
+import categoriesData from "../data/categoriesData.json";
 import CartItem from "./CartItem";
  
 const ShoppingCart = ({isOpen}) => {
   const { cartItems,closeCart } = useShoppingCart();
+  
   return (
     <div>
       <Offcanvas show={isOpen} onHide={closeCart} placement="end" style={{background: "linear-gradient(135deg, #f8fffe 0%, #ecfdf5 50%, #f0fdf4 100%)"}}>
@@ -22,8 +23,10 @@ const ShoppingCart = ({isOpen}) => {
           Total{" "}
           {FormatCurrency(
             cartItems.reduce((total, cartItem) => {
-              const item = GuacamoleItems.find((i) => i.id === cartItem.id);
-              return total + (item?.price || 0) * cartItem.quantity;
+               const recipe = categoriesData
+    .flatMap(category => category.recipes) // بيجمع كل الريسيبيز في array واحد
+    .find(r => r.id === cartItem.id);
+              return total + (recipe?.price || 0) * cartItem.quantity;
             }, 0)
           )}
         </div>

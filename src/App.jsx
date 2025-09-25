@@ -6,7 +6,7 @@ import Hero from './components/Hero/Hero.jsx'
 import Nav from './components/Navbar/Nav.jsx'
 import ContactUs from './components/Contact/ContactUs.jsx'
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import Guacamole from "./Pages/Guacamole.jsx";
+import Guacamole from "./Pages/CategoryPage.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -14,6 +14,7 @@ import ShoppingCartProvider from './context/ShoppingCartContext.jsx'
 import Login from './Pages/Login.jsx'
 import Signup from './Pages/SignUp.jsx'
 import { AuthProvider } from "./context/AuthContext.jsx";
+import CategoryPage from './Pages/CategoryPage.jsx'
 
 
 function Layout({ children }) {
@@ -53,7 +54,7 @@ function App() {
             />
 
             {/* باقي الصفحات */}
-            <Route path="/guacamole" element={<Guacamole />} />
+            <Route path="/category/:id" element={<CategoryPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
           </Routes>

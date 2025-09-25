@@ -1,9 +1,20 @@
 import GUACAMOLE from "../assets/images/guacamole-1.png";
 import { Row, Col } from "react-bootstrap";
-import GuacamoleItems from "../data/GuacamoleItems.json";
-import GuacamoleItem from "../components/GuacamoleItem";
+import CategoryItem from "../components/CategoryItem";
+import { useParams } from "react-router-dom";
+import categoriesData from '../data/categoriesData.json'
 
-const Guacamole = () => {
+const CategoryPage = () => {
+    const { id } = useParams(); 
+  const categoryId = parseInt(id, 10);
+
+  // فلترة الكاتيجوري
+  const category = categoriesData.find(cat => cat.id === categoryId);
+
+  if (!category) {
+    return <h2>Category not found</h2>;
+  }
+
   return (
     <div className="my-5 pt-5 guacamole-page">
       {/* Header Section */}
@@ -24,12 +35,18 @@ const Guacamole = () => {
       </div>
 
       <Row lg={3} md={2} sm={1} className="g-3 container mt-3 me-auto ms-auto recipes-grid">
-        {GuacamoleItems.map((item) => (
-          <Col key={item.id}>
-            <GuacamoleItem {...item} />
+      
+
+          {category.recipes.map(recipe => (
+         
+           <Col key={recipe.id}>
+            <CategoryItem {...recipe} />
           </Col>
         ))}
       </Row>
+
+
+      
 
       <style jsx>{`
         .guacamole-page {
@@ -284,4 +301,4 @@ const Guacamole = () => {
   );
 };
 
-export default Guacamole;
+export default CategoryPage;

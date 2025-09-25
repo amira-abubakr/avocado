@@ -1,11 +1,13 @@
 import React from "react";
 import { Button, Stack } from "react-bootstrap";
-import GuacamoleItems from "../data/GuacamoleItems.json";
+import categoriesData from "../data/categoriesData.json";
 import FormatCurrency from "./FormatCurrency";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 const CartItem = ({ id, quantity}) => {
-  const item = GuacamoleItems.find((i) => i.id === id);
+ const recipe = categoriesData
+  .flatMap(category => category.recipes) // يجيب كل الوصفات في Array واحدة
+  .find(r => r.id === id);
   const {removeFromCart} = useShoppingCart();
   
   return (
@@ -13,8 +15,8 @@ const CartItem = ({ id, quantity}) => {
       <Stack direction="horizontal" gap={2} className="d-flex align-items-center cart-item-stack">
         <div className="cart-item-image-container">
           <img
-            src={item.image}
-            alt={item.name}
+            src={recipe.image}
+            alt={recipe.name}
             className="cart-item-image"
           />
           {quantity > 1 && (
@@ -23,14 +25,14 @@ const CartItem = ({ id, quantity}) => {
         </div>
         
         <div className="me-auto cart-item-details">
-          <h6 className="item-name">{item.name}</h6>
+          <h6 className="item-name">{recipe.name}</h6>
           <div className="item-price">
-            {FormatCurrency(item.price)}
+            {FormatCurrency(recipe.price)}
           </div>
         </div>
         
         <div className="total-price">
-          {FormatCurrency(item.price * quantity)}
+          {FormatCurrency(recipe.price * quantity)}
         </div>
 
         <Button 

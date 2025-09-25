@@ -6,8 +6,8 @@ import Burgers from "../../assets/images/burger.png";
 import Tacos from "../../assets/images/tacos.png";
 import Salads from "../../assets/images/salads.png";
 import AvocadoToast from "../../assets/images/avocado-toast-1.png";
-import HeartHealthy from "../../assets/images/aha.svg" ;
-import Sauces from "../../assets/images/sauce.png" ;
+import HeartHealthy from "../../assets/images/aha.svg";
+import Sauces from "../../assets/images/sauce.png";
 import {Link}  from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,14 +22,25 @@ const Categories = () => {
         once: true,     // يشتغل مرة واحدة بس
       });
     }, []);
-   const categories = [
-    { name: "Guacamole", img: Guacamole, link: "/guacamole" },
-    { name: "Burgers & Sandwiches", img: Burgers, link: "/burgers" },
-    { name: "Tacos & Burritos", img: Tacos, link: "/tacos" },
-    { name: "Salads & Bowls", img: Salads, link: "/salads" },
-    { name: "Avocado Toast", img: AvocadoToast, link: "/avocado-toast" },
-    { name: "Heart Healthy", img: HeartHealthy, link: "/heart-healthy" },
-    { name: "Sauces & Spreads", img: Sauces, link: "/sauces" },
+  //  const categories = [
+  //   { name: "Guacamole", img: Guacamole, link: "/guacamole" },
+  //   { name: "Burgers & Sandwiches", img: Burgers, link: "/burgers" },
+  //   { name: "Tacos & Burritos", img: Tacos, link: "/tacos" },
+  //   { name: "Salads & Bowls", img: Salads, link: "/salads" },
+  //   { name: "Avocado Toast", img: AvocadoToast, link: "/avocado-toast" },
+  //   { name: "Heart Healthy", img: HeartHealthy, link: "/heart-healthy" },
+  //   { name: "Sauces & Spreads", img: Sauces, link: "/sauces" },
+  // ];
+
+
+    const categories = [
+    { name: "Guacamole", img: Guacamole, id :1 },
+    { name: "Burgers & Sandwiches", img: Burgers,  id :2},
+    { name: "Tacos & Burritos", img: Tacos,  id :3},
+    { name: "Salads & Bowls", img: Salads, id :4 },
+    { name: "Avocado Toast", img: AvocadoToast, id :5},
+    { name: "Heart Healthy", img: HeartHealthy,id :6 },
+    { name: "Sauces & Spreads", img: Sauces,  id :7},
   ];
 
   return (
@@ -46,10 +57,10 @@ const Categories = () => {
   className="content w-100 p-4 rounded shadow mb-4"
 >
   <div className="cat-grid d-flex justify-content-center gap-3 flex-nowrap overflow-auto">
-    {categories.map((cat, index) => (
+    {categories.map((cat) => (
       <Link
-        key={index}
-        to={cat.link}
+      key={cat.id} 
+       to={`/category/${cat.id}`}
         className="card-style bg-white rounded border border-success text-center p-3 shadow-sm text-decoration-none"
         style={{ 
           minWidth: "150px" // علشان كل بوكس يبقى ثابت العرض

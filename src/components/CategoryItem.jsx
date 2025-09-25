@@ -1,9 +1,9 @@
 import React from 'react'
-import FormatCurrency from '../components/FormatCurrency'
+import FormatCurrency from './FormatCurrency'
 import { Card, Button } from 'react-bootstrap'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 
-const GuacamoleItem = ({ id, name, image, calories, price }) => {
+const CategoryItem = ({ id, name, image, calories, price }) => {
     const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity } = useShoppingCart();
     
     const quantity = getItemQuantity(id);
@@ -74,7 +74,7 @@ const GuacamoleItem = ({ id, name, image, calories, price }) => {
                         <span 
                             className="fs-5"
                             style={{
-                                color: '#6ee7b7',
+                                color: '#1e845bff',
                                 fontWeight: '700',
                                 fontSize: '1.2rem',
                                 lineHeight: '1.3',
@@ -90,7 +90,7 @@ const GuacamoleItem = ({ id, name, image, calories, price }) => {
                             <Card.Text 
                                 className="fs-5"
                                 style={{
-                                    color: '#34d399',
+                                    color: '#1e845bff',
                                     fontWeight: '700',
                                     fontSize: '1.3rem',
                                     marginBottom: '0.5rem',
@@ -234,4 +234,4 @@ const GuacamoleItem = ({ id, name, image, calories, price }) => {
     )
 }
 
-export default GuacamoleItem
+export default CategoryItem
