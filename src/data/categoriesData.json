@@ -344,9 +344,9 @@
   },
    {
     "id": 5,
-     "body": {"title":"Avocado Taco & Burrito", 
+     "body": {"title":"Avocado Toast Recipes", 
               "desc": "Discover a variety of delicious guacamole recipes that are perfect for any occasion. From classic to creative, find your favorite way to enjoy this creamy avocado dip.",
-              "img": "/Taco&Burrito/tacos.png"
+              "img": "/Avocado Toast/avocado-toast-1.png"
             }
             ,
     "recipes": [

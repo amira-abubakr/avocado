@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Guacamole from "./Pages/CategoryPage.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
-
+import ScrollToTop from "./ScrollToTop.jsx";
 import ShoppingCartProvider from './context/ShoppingCartContext.jsx'
 import Login from './Pages/Login.jsx'
 import Signup from './Pages/SignUp.jsx'
@@ -39,6 +39,7 @@ function App() {
     <ShoppingCartProvider>
       <Router>
         <Layout>
+          
           <Routes>
             {/* الصفحة الرئيسية */}
             <Route

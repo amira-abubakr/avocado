@@ -17,26 +17,26 @@ const CategoryPage = () => {
   return (
     <div className="my-5 pt-5 guacamole-page">
       {/* Header Section */}
-      <div className="container d-flex flex-wrap align-items-center mt-5 header-section">
+      <div className="container d-flex flex-wrap justify-content-between align-items-center mt-5 header-section">
         <div className="w-50 p-3 content-section">
           <h1 className="fw-bold text-success mb-4 page-title">{category.body.title}</h1>
           <p className="text-muted mb-4 page-description">
           { category.body.desc}
-          </p>
-
+          </p>  
+          
           <button className="btn btn-outline-success learn-more-btn">Learn More</button>
         </div>
-        <div className="w-50 text-center p-3 image-section">
+        <div className="w-50 d-flex justify-content-center  p-3 image-section">
           <img src={category.body.img} alt="Guacamole" className="img-fluid hero-image" />
         </div>
       </div>
 
       <Row lg={3} md={2} sm={1} className="g-3 container mt-3 me-auto ms-auto recipes-grid">
-      
+
 
           {category.recipes.map(recipe => (
-         
-           <Col key={recipe.id}>
+          
+            <Col key={recipe.id}>
             <CategoryItem {...recipe} />
           </Col>
         ))}
