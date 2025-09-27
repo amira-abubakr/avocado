@@ -48,7 +48,7 @@ const Nav = () => {
           </a>
 
           {/* Desktop Links - Hidden on mobile */}
-          <ul className="navbar-nav d-none d-lg-flex flex-row gap-4 mb-0">
+          <ul className="navbar-nav d-none d-lg-flex flex-row gap-1 mb-0">
             {menuItems.map((item, index) => (
               <li key={index} className="nav-item">
                 <a className="nav-link text-white" href={item.href}>
@@ -368,6 +368,7 @@ const Nav = () => {
           }
         }
       `}</style>
+
     </>
   );
 };
